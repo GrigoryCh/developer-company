@@ -1,0 +1,65 @@
+//<FORM ()>====================================================================================================
+.form {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   @media (max-width: 429px) {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+   }
+	&__line {
+      @media (max-width: $md3+px) {
+         flex: 1 1 auto;
+      }
+        @media (max-width: 429px) {
+           margin-bottom: 20px;
+        }
+	}
+	&__button {
+      padding: 0 40px !important;
+      min-height: 62px !important;
+	}
+	&__error {
+      color: #fff;
+      line-height: 1.2;
+      padding: 10px 30px 0;
+      text-align: left;
+	}
+}
+//</FORM>====================================================================================================
+
+//<INPUT (inp+tab)>====================================================================================================
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	&:focus {
+		outline: none;
+	}
+}
+.input {
+	border-radius: 0 !important;
+	width: 100%;
+	padding: 0px 30px;
+   min-height: 62px;
+   @media (min-width: $md3+px) {
+   min-width: 500px;
+   }
+   color: rgba(0, 0, 0, 0.4);
+   line-height: 1.7;
+	&._focus {
+      color: inherit;
+	}
+	&._error {
+      border: 2px solid red;
+	}
+}
+textarea.input {
+	resize: none;
+	padding: 0px 0px;
+}
+//</INPUT>====================================================================================================
+

@@ -1,0 +1,23 @@
+
+.gallery {
+
+   // .gallery__header
+
+   &__header {
+      @include adaptive-value("margin-bottom", 84, 40, 1);
+      @include adaptive-value("padding-top", 190, 90, 1);
+      @include adaptive-value("padding-bottom", 180, 80, 1);
+   }
+
+   // .gallery__cards
+
+   &__cards {
+      @include adaptive-value("margin-bottom", 100, 50, 1);
+   }
+}
+//===================================================================================================================================
+
+
+
+
+
