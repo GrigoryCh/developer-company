@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Contact"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<main class="page contact">
+            <section class="contact__header header-secondary">
+               <div class="header-secondary__image"></div>
+               <div class="header-secondary__container">
+                  <h1 class="header-secondary__title big-title">Need some consultation or want to collaborarion with us? Let’s connect!</h1>
+               </div>
+            </section>
+            <section class="contact__talk talk">
+               <div class="talk__container">
+                  <div class="talk__image">
+                     <img src="img/contact/01.jpg" alt="image">
+                  </div>
+                  <div class="talk__form form-talk">
+                     <div class="form-talk__title title">Let’s talk about anything you need</div>
+                     <form action="#" class="form-talk__body">
+                        <div class="form-talk__row">
+                           <div class="form-talk__column">
+                              <input autocomplete="off" type="text" name="form[2]" data-value="Your name/company name" class="form-talk__input">
+                           </div>
+                           <div class="form-talk__column">
+                              <input autocomplete="off" type="email" name="form[2]" data-error="Please, enter your e-mail correctly!" data-value="Phone/E-mail" class="form-talk__input _req">
+                           </div>
+                        </div>
+                        <div class="form-talk__line">
+                           <textarea autocomplete="off" type="text" name="form[2]" data-error="Please, enter your e-mail correctly!" data-value="Message" class="form-talk__input"></textarea>
+                        </div>
+                        <div class="form-talk__button">
+                           <button type="submit" class="form-talk__btn btn btn_blue"><span>Submit</span></button>
+                        </div>
+                     </form>
+                  </div>
+                  
+               </div>
+               
+            </section>
+            <section class="contact__or or">
+               <div class="or__container">
+                  <h2 class="or__title title">Or contact us via e-mails or even mobile call or Whatsapp messages</h2>
+                  <div class="or__body">
+                     <a href="" class="or__button_mail btn btn_blue"><span>E-mails</span></a>
+                     <a href="" class="or__button_wapp btn btn_blue"><span>Whatsapp</span></a>
+                     <a href="" class="or__button_message btn btn_blue"><span>Message</span></a>
+                  </div>
+               </div>
+            </section>
+         </main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>
